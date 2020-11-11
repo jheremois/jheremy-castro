@@ -1,0 +1,16 @@
+extends jheremy
+block nav
+    a(href="/#about") About me
+    a(href="/#skills") Skills
+    a(href="/#portfolio") Work
+    a(href="/#contact") Contact
+block presentation
+block portfolio
+    .er404
+        .title
+            hr#hrs
+            h1 Error 404 
+            hr#hrs
+        .title
+            h1= `not found ('${url}')`
+block form

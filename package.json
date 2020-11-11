@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my personal porfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "@jheremois",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-env-file": "^0.1.8",
+    "nodemailer": "^6.4.14",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

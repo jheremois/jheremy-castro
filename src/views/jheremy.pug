@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="theme-color" content="#041229")
+        meta(name="description" content="Jheremy Castro is a software developer with knowledge of front-end and back-end, database management, seo and everything related to web development.")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/me.css")
+        title Jheremy Castro
+    body   
+        header
+            nav
+                .menu 
+                    img(src="images/menu.svg", alt="open menu")#menu
+                .options
+                    block nav
+                        a(href="#about") About me
+                        a(href="#skills") Skills
+                        a(href="#portfolio") Portfolio
+                        a(href="#contact") Contact
+            block presentation
+                .presentation
+                    h2.blue Hi, my name is
+                    h1#up_apear Jheremy Castro
+                    h1.blue20.margin_down#up_apear Web Developer
+                    a(href="#contact").blue Contact me
+        block portfolio
+            section
+                #about
+                    .is#sec
+                        .me#shadow_me
+                            img(src="images/jheremy castro.svg", alt="Jheremy Castro")#pic
+                    #about_me
+                        .title
+                            hr#hrs
+                            h2 About me
+                            hr#hrs
+                        p My name is Jheremy Castro, i'm a software developer from Dominican Republic, with knowledge of front-end and back-end, database management, seo and everything related to web development.
+                #skills
+                    .title
+                        hr#hrs
+                        h2 Skills
+                        hr#hrs
+                    .about
+                        div
+                            span#skill
+                                img(src="images/iconsa/js.svg", alt="javscript")
+                                p Javascipt
+                            span#skill
+                                img(src="images/iconsa/html.svg", alt="Html")
+                                p Html
+                            span#skill
+                                img(src="images/iconsa/css.svg", alt="Css")
+                                p Css
+                        div
+                            span#skill
+                                img(src="images/iconsa/nodejs.svg", alt="Node.js")
+                                p Node.js
+                            span#skill
+                                img(src="images/iconsa/mysql.svg", alt="MySql")
+                                p MySql
+                            span#skill
+                                img(src="images/iconsa/figma.svg", alt="Figma")
+                                p Figma
+                #portfolio
+                    .title
+                        hr#hrs
+                        h2 Portfolio
+                        hr#hrs
+                    .main_works
+                        .works#aw
+                            .main
+                                h2 Apple watch
+                                p A sample website based on the Apple watch store with a professional interface and design. Made using <strong> Node.js</strong>, <strong> Nodemailer </strong> and <strong> Express </strong>.
+                                .goin
+                                    a(href="https://apple-watch-rd.herokuapp.com" target='blank')
+                                        img(src="images/go.svg", alt="Go!")
+                                    a(href="https://github.com/jheremois/apple-watch" target='blank')
+                                        img(src="images/github.svg", alt="github")
+                        .works#dt
+                            .main
+                                h2 Duarte
+                                p A sample website based on a fictitious mechanical workshop, it has a professional design which provides a nice user experience. Made using <strong> Leaflet</strong>, <strong> Nodemailer</strong>, <strong> Node.js </strong> and <strong> Express </strong>.
+                                .goin
+                                    a(href="https://duarterd.herokuapp.com" target='blank')
+                                        img(src="images/go.svg", alt="Go!")
+                                    a(href="https://github.com/jheremois/duarte" target='blank')
+                                        img(src="images/github.svg", alt="github")
+                    .main_works
+                        .works#cc
+                            .main
+                                h2 Casa De Campo
+                                p A sample website based on Casa de Campo villas and resort, it has a nice and responsive design which was made using <strong> Bootstrap</strong>, <strong> Node.js </strong> and <strong> Express</strong>.
+                                .goin
+                                    a(href="https://casa-de-campo.herokuapp.com" target='blank')
+                                        img(src="images/go.svg", alt="Go!")
+                                    a(href="https://github.com/jheremois/casa-de-campo" target='blank')
+                                        img(src="images/github.svg", alt="github")    
+                        .works#nt
+                            .main
+                                h2 Noting
+                                p A note taking web app with a responsive and clean design. Made using <strong> Node.js</strong>, <strong> Express, </strong> <strong>Timeago.js </strong> and <strong> MySql</strong>.
+                                .goin
+                                    a(href="https://github.com/jheremois/noting" target='blank')
+                                        img(src="images/github.svg", alt="github")
+        footer 
+            #contact
+                block form
+                    form(action="/mail", method="post")#form
+                        .title
+                            h2 Contact me
+                            hr#hrs
+                        .place
+                            label(for="name") Name:
+                            input(type="name" name='name' id='name' placeholder='' required autocomplete="off")
+                        .place
+                            label(for="e-mail") E-mail:
+                            input(type="email" name='email' id='e-mail' placeholder='' required autocomplete="off")
+                        .place
+                            label(for="subject") Subject:
+                            input(type="text" name='subject' id='subject' placeholder='' required autocomplete="off")
+                        .place
+                            label(for="message") Message:
+                            textarea(name="message", cols="30", rows="6"  id='message' placeholder='' required)
+                        .send
+                            button Send mail 
+            .social
+                    .medias
+                        a(href="https://www.linkedin.com/in/jheremy-ricardo-castro-guerrero-3a85521a0/" target='blank')
+                            img(src="images/linkedin.svg", alt="linkedin")
+                        a(href="https://github.com/jheremois" target='blank')
+                            img(src="images/github.svg", alt="github")
+                    .medias
+                        a(href="https://www.instagram.com/shuniata_jc/" target='blank')
+                            img(src="images/instagram.svg", alt="instagram")
+                        a(href="https://twitter.com/jheremois" target='blank')
+                            img(src="images/twitter.svg", alt="twitter")                    
+    script(src="js/jrcg.js")
