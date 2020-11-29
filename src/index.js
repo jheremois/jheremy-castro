@@ -18,9 +18,18 @@ app.use(express.urlencoded({
     
 }))
 
-const routes = require('./routes/router')
+const routes = require('./router')
 
 app.use('/', routes())
+
+app.use((req, res, next) => {
+    
+    res.status(200)
+
+    res.render('200')
+    return
+
+})
 
 app.use((req, res, next) => {
     
@@ -31,6 +40,6 @@ app.use((req, res, next) => {
 
 })
 
-const port = process.env.PORT
+const port = process.env.PORT || 4000
 
 app.listen(port)

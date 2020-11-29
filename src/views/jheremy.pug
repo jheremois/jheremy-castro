@@ -3,19 +3,35 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="theme-color" content="#041229")
+        meta(name="MobileOptimized", content="width")
+        meta(name="HandHeldFriendly", content="true")
         meta(name="description" content="Jheremy Castro is a software developer with knowledge of front-end and back-end, database management, seo and everything related to web development.")
-        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        link(rel="apple-touch-icon", href="images/favicon.ico")
+        link(rel="apple-touch-startup-image")
+        link(rel="manifest", href="manifest.json")
         link(rel="stylesheet", href="css/me.css")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
         title Jheremy Castro
-    body   
+        script(async src="https://www.googletagmanager.com/gtag/js?id=G-HZYM5R7LEE")
+        script.
+            window.dataLayer = window.dataLayer || []
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date())
+            gtag('config', 'G-HZYM5R7LEE')
+    body
         header
             nav
                 .menu 
-                    img(src="images/menu.svg", alt="open menu")#menu
+                    svg(width="36" height="36" viewBox="0 0 103 83" fill="none" xmlns="http://www.w3.org/2000/svg")#menu
+                        rect(width="103" height="12" rx="2" fill="#1481FF")
+                        rect(x="19" y="32" width="84" height="12" rx="2" fill="#1481FF")
+                        rect(y="64" width="103" height="12" rx="2" fill="#1481FF")
                 .options
                     block nav
-                        a(href="#about") About me
+                        a(href="#about") About Me
                         a(href="#skills") Skills
                         a(href="#portfolio") Portfolio
                         a(href="#contact") Contact
@@ -31,10 +47,11 @@ html(lang="en")
                     .is#sec
                         .me#shadow_me
                             img(src="images/jheremy castro.svg", alt="Jheremy Castro")#pic
+                        
                     #about_me
                         .title
                             hr#hrs
-                            h2 About me
+                            h2 About Me
                             hr#hrs
                         p My name is Jheremy Castro, i'm a software developer from Dominican Republic, with knowledge of front-end and back-end, database management, seo and everything related to web development.
                 #skills
@@ -75,7 +92,10 @@ html(lang="en")
                                 p A sample website based on the Apple watch store with a professional interface and design. Made using <strong> Node.js</strong>, <strong> Nodemailer </strong> and <strong> Express </strong>.
                                 .goin
                                     a(href="https://apple-watch-rd.herokuapp.com" target='blank')
-                                        img(src="images/go.svg", alt="Go!")
+                                        <svg width="31" height="31" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="50" fill="#1481FF"/>
+                                            <path d="M31 77L66.697 24M66.697 24L50.5758 27.573M66.697 24L69 38.8876" stroke="white" stroke-width="4"/>
+                                        </svg>
                                     a(href="https://github.com/jheremois/apple-watch" target='blank')
                                         img(src="images/github.svg", alt="github")
                         .works#dt
@@ -84,7 +104,10 @@ html(lang="en")
                                 p A sample website based on a fictitious mechanical workshop, it has a professional design which provides a nice user experience. Made using <strong> Leaflet</strong>, <strong> Nodemailer</strong>, <strong> Node.js </strong> and <strong> Express </strong>.
                                 .goin
                                     a(href="https://duarterd.herokuapp.com" target='blank')
-                                        img(src="images/go.svg", alt="Go!")
+                                        <svg width="31" height="31" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="50" fill="#1481FF"/>
+                                            <path d="M31 77L66.697 24M66.697 24L50.5758 27.573M66.697 24L69 38.8876" stroke="white" stroke-width="4"/>
+                                        </svg>
                                     a(href="https://github.com/jheremois/duarte" target='blank')
                                         img(src="images/github.svg", alt="github")
                     .main_works
@@ -94,7 +117,10 @@ html(lang="en")
                                 p A sample website based on Casa de Campo villas and resort, it has a nice and responsive design which was made using <strong> Bootstrap</strong>, <strong> Node.js </strong> and <strong> Express</strong>.
                                 .goin
                                     a(href="https://casa-de-campo.herokuapp.com" target='blank')
-                                        img(src="images/go.svg", alt="Go!")
+                                        <svg width="31" height="31" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="50" fill="#1481FF"/>
+                                            <path d="M31 77L66.697 24M66.697 24L50.5758 27.573M66.697 24L69 38.8876" stroke="white" stroke-width="4"/>
+                                        </svg>
                                     a(href="https://github.com/jheremois/casa-de-campo" target='blank')
                                         img(src="images/github.svg", alt="github")    
                         .works#nt
@@ -109,7 +135,7 @@ html(lang="en")
                 block form
                     form(action="/mail", method="post")#form
                         .title
-                            h2 Contact me
+                            h2 Contact Me
                             hr#hrs
                         .place
                             label(for="name") Name:
@@ -128,12 +154,26 @@ html(lang="en")
             .social
                     .medias
                         a(href="https://www.linkedin.com/in/jheremy-ricardo-castro-guerrero-3a85521a0/" target='blank')
-                            img(src="images/linkedin.svg", alt="linkedin")
+                            svg(width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="50" cy="50" r="50" fill="#1481FF")
+                                rect(x="20" y="20" width="60" height="56.6038" rx="7" fill="white")
+                                path(d="M37.5469 66H29.625V40.6406H37.5469V66ZM29.1562 34.1016C29.1562 32.9766 29.5625 32.0547 30.375 31.3359C31.1875 30.6172 32.2422 30.2578 33.5391 30.2578C34.8359 30.2578 35.8906 30.6172 36.7031 31.3359C37.5156 32.0547 37.9219 32.9766 37.9219 34.1016C37.9219 35.2266 37.5156 36.1484 36.7031 36.8672C35.8906 37.5859 34.8359 37.9453 33.5391 37.9453C32.2422 37.9453 31.1875 37.5859 30.375 36.8672C29.5625 36.1484 29.1562 35.2266 29.1562 34.1016ZM49.6875 40.6406L49.9453 43.6172C51.6953 41.3203 54.1094 40.1719 57.1875 40.1719C59.8281 40.1719 61.7969 40.9609 63.0938 42.5391C64.4062 44.1172 65.0859 46.4922 65.1328 49.6641V66H57.2109V49.9922C57.2109 48.7109 56.9531 47.7734 56.4375 47.1797C55.9219 46.5703 54.9844 46.2656 53.625 46.2656C52.0781 46.2656 50.9297 46.875 50.1797 48.0938V66H42.2812V40.6406H49.6875Z" fill="#1481FF")
                         a(href="https://github.com/jheremois" target='blank')
                             img(src="images/github.svg", alt="github")
                     .medias
                         a(href="https://www.instagram.com/shuniata_jc/" target='blank')
-                            img(src="images/instagram.svg", alt="instagram")
+                            svg(width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg")#pic
+                                circle(cx="50" cy="50" r="50" fill="#1481FF")
+                                rect(x="21.5" y="21.5" width="57" height="57" rx="12.5" fill="#1481FF" stroke="#F8F8FF" stroke-width="5")
+                                circle(cx="49.52" cy="49.5198" r="12.5" stroke="#F8F8FF" stroke-width="5")
+                                circle(cx="66.4998" cy="33.4999" r="3" fill="#F8F8FF")
                         a(href="https://twitter.com/jheremois" target='blank')
-                            img(src="images/twitter.svg", alt="twitter")                    
+                            <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#1481FF"/>
+                                <g clip-path="url(#clip0)">
+                                <path d="M80 33.3963C77.7687 34.375 75.3912 35.0237 72.9125 35.3387C75.4625 33.8162 77.4088 31.4237 78.3238 28.54C75.9463 29.9575 73.3212 30.9588 70.5237 31.5175C68.2662 29.1138 65.0487 27.625 61.5387 27.625C54.7287 27.625 49.2462 33.1525 49.2462 39.9288C49.2462 40.9038 49.3287 41.8412 49.5312 42.7337C39.305 42.235 30.2563 37.3338 24.1775 29.8675C23.1162 31.7088 22.4938 33.8163 22.4938 36.085C22.4938 40.345 24.6875 44.1212 27.9575 46.3075C25.9812 46.27 24.0425 45.6963 22.4 44.7925C22.4 44.83 22.4 44.8787 22.4 44.9275C22.4 50.905 26.6637 55.87 32.255 57.0137C31.2537 57.2875 30.1625 57.4187 29.03 57.4187C28.2425 57.4187 27.4475 57.3737 26.7012 57.2087C28.295 62.08 32.8175 65.6612 38.195 65.7775C34.01 69.0512 28.6963 71.0237 22.9438 71.0237C21.935 71.0237 20.9675 70.9787 20 70.855C25.4487 74.3687 31.9063 76.375 38.87 76.375C61.505 76.375 73.88 57.625 73.88 41.3725C73.88 40.8287 73.8612 40.3038 73.835 39.7825C76.2762 38.05 78.3275 35.8863 80 33.3963Z" fill="#F8F8FF"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="60" height="60" fill="white" transform="translate(20 22)"/>
     script(src="js/jrcg.js")

@@ -279,16 +279,16 @@ section{
     width: 45.8%;
 }
 #aw{
-    background-image: url('../images/project\ \(2\).svg');
+    background-image: url('../images/project\ \(2\).webp');
 }
 #dt{
-    background-image: url('../images/project\ \(1\).svg');
+    background-image: url('../images/project\ \(1\).webp');
 }
 #cc{
-    background-image: url('../images/project\ \(3\).svg');
+    background-image: url('../images/project\ \(3\).webp');
 }
 #nt{
-    background-image: url('../images/project\ \(4\).svg');
+    background-image: url('../images/project\ \(4\).webp');
 }
 .main_works .works .imbg{
     display: none;
@@ -322,12 +322,8 @@ strong{
     position: initial;
 }
 .main_works .works div .goin img{
-    opacity: 80%;
     height: 30px;
     width: 30px;
-}
-.main_works .works div .goin img:hover{
-    opacity: 100%;
 }
 /*
     footer
