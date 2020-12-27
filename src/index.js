@@ -10,7 +10,7 @@ app.set('view engine', 'pug')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-//env('./.env')
+env('./.env')
 
 app.use(express.urlencoded({
 
