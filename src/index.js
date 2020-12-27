@@ -10,7 +10,7 @@ app.set('view engine', 'pug')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-env('./.env')
+//env('./.env')
 
 app.use(express.urlencoded({
 
@@ -24,15 +24,6 @@ app.use('/', routes())
 
 app.use((req, res, next) => {
     
-    res.status(200)
-
-    res.render('200')
-    return
-
-})
-
-app.use((req, res, next) => {
-    
     res.status(404)
 
     res.render('404', { url: req.url })
@@ -40,6 +31,6 @@ app.use((req, res, next) => {
 
 })
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 app.listen(port)

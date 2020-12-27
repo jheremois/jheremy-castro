@@ -5,7 +5,7 @@ const CACHE_NAME = 'v1_cache_programador_fitness',
     './js/jrcg.js',
     './images/favicon.ico',
     './images/logo.png',
-    './views/sjheremy.pug',
+    './views/jheremy.pug',
     './fonts/SF-Pro.otf'
   ]
 

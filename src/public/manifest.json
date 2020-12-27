@@ -1,7 +1,7 @@
 {
-    "name": "Jheremy Castro",
+    "name": "Jheremy castro",
     "short_name": "Jheremy Castro",
-    "description": "Jheremy Castro is a software developer fron Domican Republic",
+    "description": "Jheremy Castro is a software developer from Domican Republic",
     "background_color": "#041229",
     "theme_color": "#1481ff",
     "display": "standalone",
@@ -9,26 +9,26 @@
     "scope": "./",
     "lang": "en",
     "icons": [
-        {
+      {
+        "src": "./images/logo.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "./images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
           "src": "./images/logo.png",
-          "sizes": "1024x1024",
+          "sizes": "256x256",
           "type": "image/png"
-        },
-        {
-          "src": "./images/logo.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        },
-        {
-            "src": "./images/logo.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "./favicon.png",
-            "sizes": "196x196",
-            "type": "image/png",
-            "purpose": "maskable"
-        }
-    ]
+      },
+      {
+          "src": "./favicon.png",
+          "sizes": "196x196",
+          "type": "image/png",
+          "purpose": "maskable"
+      }
+  ]
 }
